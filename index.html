@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Druga połowa | Dieta dla mężczyzn w andropauzie — Zwierciadło</title>
+<meta name="description" content="Jak facet 45+ odzyskuje poranki, skupienie i formę — bez suplementów, bez tabletek hormonalnych.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0f1419;
+  --ink-soft: #2a2f36;
+  --paper: #f5f2ec;
+  --paper-warm: #ede7db;
+  --accent: #c9401b;
+  --accent-dark: #a02f13;
+  --muted: #8b8578;
+  --line: #d6d0c2;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 17px;
+}
+.serif { font-family: 'Playfair Display', Georgia, serif; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.narrow { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+/* NAV */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(245, 242, 236, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+}
+.nav-inner {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1100px; margin: 0 auto; padding: 0 24px;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+}
+.logo span { color: var(--accent); }
+.nav-right { font-size: 14px; color: var(--muted); }
+.nav-right a { color: var(--ink); text-decoration: none; font-weight: 600; margin-left: 24px; }
+.nav-right a:hover { color: var(--accent); }
+
+/* HERO */
+.hero {
+  padding: 80px 0 100px;
+  background: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 400;
+}
+.hero-sub {
+  font-size: 20px;
+  color: var(--ink-soft);
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+.hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 16px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid var(--ink);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+.btn-primary:hover { background: var(--accent); border-color: var(--accent); }
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+}
+.btn-secondary:hover { background: var(--ink); color: var(--paper); }
+.hero-urgency {
+  margin-top: 32px;
+  padding: 16px 20px;
+  background: var(--paper-warm);
+  border-left: 3px solid var(--accent);
+  font-size: 14px;
+  color: var(--ink-soft);
+  max-width: 520px;
+}
+.hero-urgency strong { color: var(--ink); }
+
+.hero-book {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-wrapper {
+  position: relative;
+  width: 300px;
+  transform: rotate(-3deg);
+  transition: transform 0.4s;
+}
+.book-wrapper:hover { transform: rotate(0deg) scale(1.02); }
+.book-cover {
+  width: 100%;
+  aspect-ratio: 2/3;
+  background: linear-gradient(135deg, #1a1f2a 0%, #0f1419 100%);
+  border-radius: 2px;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.1),
+    -8px 10px 30px rgba(0,0,0,0.25),
+    -15px 20px 60px rgba(0,0,0,0.15);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.book-cover::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: rgba(255,255,255,0.1);
+}
+.book-accent {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.book-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 900;
+  margin: 20px 0;
+}
+.book-sub {
+  font-size: 13px;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+.book-author {
+  font-size: 12px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* SECTION BASE */
+section { padding: 80px 0; }
+.section-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+.section-lead {
+  font-size: 19px;
+  color: var(--ink-soft);
+  max-width: 680px;
+  margin-bottom: 50px;
+}
+
+/* SIGNS SECTION */
+.signs { background: var(--paper-warm); }
+.signs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.sign {
+  background: var(--paper);
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.sign-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  min-width: 40px;
+}
+.sign-text {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* AUDIT SECTION */
+.audit {
+  background: var(--ink);
+  color: var(--paper);
+}
+.audit .section-title { color: var(--paper); }
+.audit .section-tag { color: var(--accent); }
+.audit .section-lead { color: #b8b3a5; }
+
+.audit-box {
+  background: #1a1f2a;
+  border-radius: 8px;
+  padding: 48px;
+  margin-top: 40px;
+  border: 1px solid #2a2f3a;
+}
+.audit-progress {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 32px;
+}
+.audit-progress-bar {
+  flex: 1;
+  height: 3px;
+  background: #2a2f3a;
+  border-radius: 2px;
+  transition: background 0.3s;
+}
+.audit-progress-bar.active { background: var(--accent); }
+.audit-progress-bar.done { background: var(--paper); }
+
+.audit-q-num {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.audit-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1.3;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+.audit-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.audit-option {
+  padding: 18px;
+  background: transparent;
+  color: var(--paper);
+  border: 2px solid #3a3f4a;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.audit-option:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.audit-footer {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #6a7180;
+}
+.audit-footer button {
+  background: transparent;
+  border: none;
+  color: #6a7180;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.audit-footer button:hover { color: var(--paper); }
+
+/* RESULT */
+.audit-result { display: none; text-align: center; }
+.audit-result.show { display: block; }
+.result-score {
+  font-family: 'Playfair Display', serif;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1;
+  margin: 20px 0;
+  color: var(--accent);
+}
+.result-score-total { color: #6a7180; font-size: 60px; }
+.result-profile {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 20px 0 16px;
+}
+.result-description {
+  font-size: 17px;
+  color: #b8b3a5;
+  max-width: 500px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+.result-step {
+  background: #0f1419;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid #2a2f3a;
+  margin: 24px auto;
+  max-width: 520px;
+  text-align: left;
+}
+.result-step-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.result-step-text {
+  font-size: 16px;
+  color: var(--paper);
+  line-height: 1.5;
+}
+.result-cta {
+  margin-top: 32px;
+  padding: 28px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border-radius: 6px;
+  max-width: 520px;
+  margin: 32px auto 0;
+}
+.result-cta-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.result-cta-text {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.result-cta .btn {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+.result-cta .btn:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--paper);
+}
+
+/* AUTHOR */
+.author {
+  background: var(--paper);
+}
+.author-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+}
+.author-photo {
+  width: 100%;
+  aspect-ratio: 4/5;
+  background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600');
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  filter: grayscale(20%) contrast(1.05);
+}
+.author-quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1.4;
+  color: var(--ink);
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+.author-quote::before {
+  content: '"';
+  display: block;
+  font-size: 80px;
+  line-height: 0.5;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.author-name {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.author-title {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* TESTIMONIALS */
+.voices {
+  background: var(--paper-warm);
+}
+.voices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.voice {
+  background: var(--paper);
+  padding: 32px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+}
+.voice-text {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.voice-meta {
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.voice-meta strong { color: var(--ink); font-weight: 700; }
+
+/* CTA FINAL */
+.final-cta {
+  background: var(--ink);
+  color: var(--paper);
+  text-align: center;
+}
+.final-cta .section-title { color: var(--paper); }
+.final-cta .section-lead {
+  color: #b8b3a5;
+  margin-left: auto;
+  margin-right: auto;
+}
+.final-box {
+  max-width: 640px;
+  margin: 40px auto 0;
+  padding: 48px;
+  background: #1a1f2a;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+}
+.price-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 16px;
+  margin: 24px 0;
+}
+.price {
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 900;
+  color: var(--paper);
+}
+.price-note { font-size: 14px; color: #b8b3a5; }
+.bonus-list {
+  text-align: left;
+  max-width: 400px;
+  margin: 24px auto;
+  list-style: none;
+}
+.bonus-list li {
+  padding: 10px 0;
+  padding-left: 24px;
+  position: relative;
+  font-size: 15px;
+  color: #b8b3a5;
+  border-bottom: 1px dashed #2a2f3a;
+}
+.bonus-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.final-cta .btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  margin-top: 20px;
+  padding: 20px 48px;
+  font-size: 18px;
+}
+.final-cta .btn-primary:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+/* FAQ */
+.faq-item {
+  border-bottom: 1px solid var(--line);
+  padding: 24px 0;
+  cursor: pointer;
+}
+.faq-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-q::after {
+  content: '+';
+  font-size: 28px;
+  color: var(--accent);
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+.faq-item.open .faq-q::after {
+  transform: rotate(45deg);
+}
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.faq-item.open .faq-a {
+  max-height: 400px;
+  margin-top: 16px;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--ink);
+  color: #6a7180;
+  padding: 40px 0;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #2a2f3a;
+}
+.footer a { color: #b8b3a5; text-decoration: none; margin: 0 12px; }
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .hero { padding: 40px 0 60px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero h1 { font-size: 38px; }
+  .hero-sub { font-size: 17px; }
+  .book-wrapper { width: 220px; margin: 0 auto; }
+  section { padding: 60px 0; }
+  .section-title { font-size: 30px; }
+  .signs-grid { grid-template-columns: 1fr; }
+  .voices-grid { grid-template-columns: 1fr; }
+  .author-grid { grid-template-columns: 1fr; gap: 40px; }
+  .audit-box { padding: 28px; }
+  .audit-question { font-size: 20px; }
+  .audit-options { grid-template-columns: 1fr; }
+  .final-box { padding: 28px; }
+  .nav-right a { margin-left: 12px; font-size: 13px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="logo">Druga<span>.</span>połowa</div>
+    <div class="nav-right">
+      <a href="#audyt">Audyt</a>
+      <a href="#ksiazka">Książka</a>
+      <a href="#kup" style="color: var(--accent);">Zamów</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-eyebrow">Pierwsza w Polsce książka o męskiej andropauzie</span>
+        <h1>Pierwszą połowę grałeś na <em>talencie</em>.<br>Drugą wygrywa się <em>taktyką</em>.</h1>
+        <p class="hero-sub">Jak facet 45+ odzyskuje poranki, skupienie i formę — bez suplementów, bez tabletek hormonalnych. To jest playbook, nie poradnik.</p>
+        <div class="hero-cta">
+          <a href="#kup" class="btn btn-primary">Zamów książkę — 49 zł</a>
+          <a href="#audyt" class="btn btn-secondary">Zrób audyt (3 min)</a>
+        </div>
+        <div class="hero-urgency">
+          <strong>Kupując w ciągu 14 dni od premiery:</strong> dostęp do webinarium „Klinika Protokołu" z autorem i lekarzem. 90 minut. Pytania bez cenzury. Tylko dla zamawiających.
+        </div>
+      </div>
+      <div class="hero-book">
+        <div class="book-wrapper">
+          <div class="book-cover">
+            <div>
+              <div class="book-accent">Protokół drugiej połowy</div>
+              <h2 class="book-title">Dieta dla mężczyzn w andropauzie</h2>
+              <p class="book-sub">Co się zmienia po 45. roku życia — i co z tym zrobić, zanim zacznie Ci zabierać za wiele.</p>
+            </div>
+            <div class="book-author">Zwierciadło · 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signs">
+  <div class="container">
+    <span class="section-tag">6 sygnałów, że jesteś w drugiej połowie</span>
+    <h2 class="section-title">Rozpoznaj to bez wizyty u lekarza</h2>
+    <p class="section-lead">Jeśli 3 z 6 poniższych brzmią znajomo — to nie zmęczenie. To biologia, której nikt Ci nie wytłumaczył.</p>
+    <div class="signs-grid">
+      <div class="sign"><div class="sign-num">01</div><div class="sign-text">Budzisz się między 3 a 5 rano co najmniej 2 razy w tygodniu — bez alkoholu, bez kawy po 14:00.</div></div>
+      <div class="sign"><div class="sign-num">02</div><div class="sign-text">Pracujesz tak samo jak 5 lat temu, ale po 14:00 masz mgłę, której rano nie było.</div></div>
+      <div class="sign"><div class="sign-num">03</div><div class="sign-text">Trenujesz tak samo, regeneracja trwa dwa razy dłużej.</div></div>
+      <div class="sign"><div class="sign-num">04</div><div class="sign-text">Waga rośnie mimo, że jesz tak samo jak 10 lat temu — głównie w pasie.</div></div>
+      <div class="sign"><div class="sign-num">05</div><div class="sign-text">Partnerka mówi, że się zmieniłeś. Ty myślisz, że jesteś tylko zmęczony.</div></div>
+      <div class="sign"><div class="sign-num">06</div><div class="sign-text">Decyzję, którą rok temu podjąłbyś w 10 minut, dziś odkładasz o tydzień.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="audit" id="audyt">
+  <div class="narrow">
+    <span class="section-tag">Audyt drugiej połowy</span>
+    <h2 class="section-title">12 pytań. 3 minuty. Żadnych tabletek na końcu.</h2>
+    <p class="section-lead">Nie jest to test medyczny. To lista sygnałów z codziennego życia. Odpowiadasz szczerze — dostajesz liczbę, diagnozę i jeden krok do zrobienia w przyszłym tygodniu.</p>
+
+    <div class="audit-box">
+      <div class="audit-progress" id="progress"></div>
+
+      <div id="questionContainer">
+        <div class="audit-q-num" id="qnum">Pytanie 1 z 12</div>
+        <div class="audit-question" id="question">Budzisz się między 3 a 5 rano co najmniej 2 razy w tygodniu, bez widocznej przyczyny.</div>
+        <div class="audit-options">
+          <button class="audit-option" onclick="answer(2)">Tak, regularnie</button>
+          <button class="audit-option" onclick="answer(1)">Czasem</button>
+          <button class="audit-option" onclick="answer(0)">Nie</button>
+        </div>
+        <div class="audit-footer">
+          <button onclick="prevQ()" id="backBtn" style="visibility:hidden;">← Wstecz</button>
+          <span id="progressText">1 / 12</span>
+        </div>
+      </div>
+
+      <div class="audit-result" id="result">
+        <div class="audit-q-num">Twój wynik</div>
+        <div class="result-score"><span id="scoreNum">0</span><span class="result-score-total">/12</span></div>
+        <div class="result-profile" id="resultProfile">—</div>
+        <div class="result-description" id="resultDesc">—</div>
+        <div class="result-step">
+          <div class="result-step-label">Jeden krok na przyszły tydzień</div>
+          <div class="result-step-text" id="resultStep">—</div>
+        </div>
+        <div class="result-cta">
+          <div class="result-cta-title">Chcesz pełny protokół?</div>
+          <div class="result-cta-text">Książka to 220 stron konkretnego planu — dieta, sen, regeneracja, decyzje w pracy. Zamówisz w 30 sekund.</div>
+          <a href="#kup" class="btn btn-primary">Zamów książkę — 49 zł</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="author">
+  <div class="container">
+    <div class="author-grid">
+      <div class="author-photo"></div>
+      <div>
+        <span class="section-tag">Kto to napisał</span>
+        <p class="author-quote">To nie jest książka o starzeniu się. To jest książka dla facetów, którzy zauważyli, że coś się zmieniło — i nie chcą czekać, aż zacznie im to zabierać za dużo. Taktyka, nie diagnoza.</p>
+        <div class="author-name">Dr Tomasz K.</div>
+        <div class="author-title">Dietetyk kliniczny, 20 lat praktyki z pacjentami 40+</div>
+        <p style="margin-top: 24px; color: var(--ink-soft);">Współpracował z klubami sportowymi ekstraklasy, kadrą managerską spółek giełdowych, i kilkuset facetami, którzy chcieli zrozumieć, dlaczego protokoły z lat 30. przestały im działać.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="voices">
+  <div class="container">
+    <span class="section-tag">Co mówią pierwsi czytelnicy</span>
+    <h2 class="section-title">Nie recenzje. Konkretne zdania.</h2>
+    <div class="voices-grid">
+      <div class="voice">
+        <p class="voice-text">„Po dwóch tygodniach nie budzę się o czwartej. Pierwszy raz od dwóch lat. Jedna konkretna zmiana w śniadaniu."</p>
+        <div class="voice-meta"><strong>Marek, 51</strong><br>dyrektor operacyjny, Warszawa</div>
+      </div>
+      <div class="voice">
+        <p class="voice-text">„Kupiłem dla męża, ale przeczytałam pierwsza. Wreszcie zrozumiałam, że to nie kryzys naszego związku."</p>
+        <div class="voice-meta"><strong>Anna, 46</strong><br>kupiła dla partnera</div>
+      </div>
+      <div class="voice">
+        <p class="voice-text">„Biegam od 15 lat. Regeneracja była coraz dłuższa. Okazało się, że to nie wiek — to protokół białka po treningu."</p>
+        <div class="voice-meta"><strong>Jacek, 48</strong><br>biegacz amator</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta" id="kup">
+  <div class="narrow">
+    <span class="section-tag">Zamów książkę</span>
+    <h2 class="section-title">Koniec z „to tylko wiek".</h2>
+    <p class="section-lead">Druga połowa to nie emerytura. To gra, którą wygrywa się inaczej niż pierwszą.</p>
+
+    <div class="final-box">
+      <div class="price-row">
+        <div class="price">49 zł</div>
+        <div class="price-note">papier · ebook za 39 zł</div>
+      </div>
+
+      <ul class="bonus-list">
+        <li>220 stron konkretnego planu — dieta, sen, regeneracja, decyzje w pracy</li>
+        <li>Webinarium „Klinika Protokołu" z autorem i lekarzem (90 min, tylko dla kupujących)</li>
+        <li>Dostęp do zamkniętej grupy „Klub czytelników drugiej połowy"</li>
+        <li>Kod QR w książce — rozszerzony Audyt online, tylko dla posiadaczy</li>
+      </ul>
+
+      <a href="#" class="btn btn-primary">Zamów teraz</a>
+      <p style="margin-top: 16px; font-size: 13px; color: #6a7180;">Wysyłka w 48h. Dostępne także w Empiku i na Allegro.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="narrow">
+    <span class="section-tag">FAQ</span>
+    <h2 class="section-title">Pytania, które padają najczęściej</h2>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Czy muszę kupować jakieś suplementy?</div>
+      <div class="faq-a">Nie. Książka jest antytezą suplementowego podejścia. Cały protokół opiera się na zmianach w diecie, śnie i regeneracji — rzeczach, które kontrolujesz bez aptek. Jeśli po przeczytaniu uznasz, że chcesz suplementację — to Twoja decyzja, ale nie jest warunkiem.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Czy to jest książka medyczna?</div>
+      <div class="faq-a">Nie. To jest poradnik praktyczny oparty na wiedzy medycznej i konsultowany z lekarzami (endokrynolog, internista). Nie zastępuje diagnozy ani wizyty u specjalisty — ale daje Ci język i narzędzia, zanim na taką wizytę się zdecydujesz.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Mam 42 lata — to za wcześnie?</div>
+      <div class="faq-a">Nie. Druga połowa zaczyna się wcześniej niż większość myśli — pierwsze zmiany są zauważalne już w okolicach 40. roku życia. Im wcześniej zrozumiesz, co się zmienia, tym łatwiej utrzymać formę.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Kupuję dla partnera — czy to ma sens?</div>
+      <div class="faq-a">Tak — ale ta książka jest tak napisana, że warto ją najpierw przeczytać samej. Da Ci język do tego, co widzisz codziennie w domu. Nie musisz mu jej wciskać. Wystarczy, że ją zostawisz na stoliku.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Co dostaję poza książką?</div>
+      <div class="faq-a">Webinarium „Klinika Protokołu" (90 min z autorem i lekarzem, dla kupujących w pierwsze 14 dni), dostęp do zamkniętej grupy FB „Klub czytelników drugiej połowy", oraz kod QR w książce do rozszerzonego Audytu online.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    © Wydawnictwo Zwierciadło 2026 ·
+    <a href="#">Kontakt</a>
+    <a href="#">Polityka prywatności</a>
+    <a href="#">Regulamin</a>
+  </div>
+</footer>
+
+<script>
+const questions = [
+  "Budzisz się między 3 a 5 rano co najmniej 2 razy w tygodniu, bez widocznej przyczyny.",
+  "Po 14:00 masz mgłę w głowie, której rano nie było.",
+  "Waga rośnie głównie w pasie, mimo że jesz tak samo jak 5 lat temu.",
+  "Regeneracja po treningu trwa dwa razy dłużej niż kiedyś.",
+  "Tę samą decyzję, którą rok temu podjąłbyś w 10 minut, dziś odkładasz o tydzień.",
+  "Kawa pobudza Cię na godzinę, nie na cztery.",
+  "Partnerka, przyjaciele lub współpracownicy mówią, że się zmieniłeś.",
+  "Masz mniej ochoty na rzeczy, które wcześniej sprawiały Ci przyjemność (sport, seks, hobby).",
+  "Drażni Cię to, co wcześniej nie drażniło — dźwięki, rozmowy, drobiazgi.",
+  "Trenujesz tak samo, ale siła i wydolność spadają zamiast rosnąć.",
+  "Po alkoholu potrzebujesz 2-3 dni regeneracji, nie jednego.",
+  "Masz wrażenie, że pracujesz coraz ciężej, żeby osiągać te same wyniki co kiedyś."
+];
+
+let current = 0;
+let answers = [];
+
+function renderProgress() {
+  const bar = document.getElementById('progress');
+  bar.innerHTML = '';
+  for (let i = 0; i < questions.length; i++) {
+    const d = document.createElement('div');
+    d.className = 'audit-progress-bar';
+    if (i === current) d.classList.add('active');
+    if (i < current) d.classList.add('done');
+    bar.appendChild(d);
+  }
+}
+
+function renderQuestion() {
+  document.getElementById('qnum').textContent = `Pytanie ${current + 1} z ${questions.length}`;
+  document.getElementById('question').textContent = questions[current];
+  document.getElementById('progressText').textContent = `${current + 1} / ${questions.length}`;
+  document.getElementById('backBtn').style.visibility = current > 0 ? 'visible' : 'hidden';
+  renderProgress();
+}
+
+function answer(val) {
+  answers[current] = val;
+  if (current < questions.length - 1) {
+    current++;
+    renderQuestion();
+  } else {
+    showResult();
+  }
+}
+
+function prevQ() {
+  if (current > 0) {
+    current--;
+    renderQuestion();
+  }
+}
+
+function showResult() {
+  const score = answers.reduce((a, b) => a + b, 0);
+  const normalizedScore = Math.round((score / 24) * 12);
+  document.getElementById('questionContainer').style.display = 'none';
+  document.getElementById('result').classList.add('show');
+  document.getElementById('scoreNum').textContent = normalizedScore;
+
+  let profile, desc, step;
+  if (normalizedScore <= 3) {
+    profile = 'Forma trzymana';
+    desc = 'Trzymasz się dobrze. Większość sygnałów, które obserwujesz, nie wykracza poza to, co się czasem zdarza każdemu. Nie oznacza to, że możesz przestać zwracać uwagę — drugą połowę łatwiej grać proaktywnie niż reaktywnie.';
+    step = 'Śledź przez najbliższe 4 tygodnie, czy pojawiają się nowe sygnały. Najlepszy moment na zmianę nawyków to ten, kiedy jeszcze nie musisz.';
+  } else if (normalizedScore <= 8) {
+    profile = 'Druga połowa pod presją';
+    desc = 'Widzisz już konkretne sygnały. Jeszcze nie kryzys, ale już nie normalny stan sprzed 5 lat. To moment, w którym jedna-dwie konkretne zmiany dają największy zwrot — i w którym łatwo zignorować problem, mówiąc sobie „to tylko wiek".';
+    step = 'Przez najbliższy tydzień wykonaj jeden eksperyment: przesuń śniadanie o godzinę później, a kolację o godzinę wcześniej. Obserwuj sen i energię po 14:00.';
+  } else {
+    profile = 'Czas na taktykę';
+    desc = 'To, co obserwujesz, to nie wypadek. To system. Większość sygnałów z audytu dotyczy Ciebie regularnie, nie okazjonalnie. Dobra wiadomość: to nie jest nieodwracalne. Zła wiadomość: samo nie przejdzie. Dobra wiadomość #2: książka została napisana dokładnie dla Ciebie.';
+    step = 'Dziś wieczorem: zapisz, o której położysz się spać, o której wstaniesz, i jak się poczujesz rano. Zacznij od danych. Bez danych nie ma protokołu.';
+  }
+
+  document.getElementById('resultProfile').textContent = profile;
+  document.getElementById('resultDesc').textContent = desc;
+  document.getElementById('resultStep').textContent = step;
+}
+
+function toggleFaq(el) {
+  el.classList.toggle('open');
+}
+
+renderQuestion();
+</script>
+
+</body>
+</html>
