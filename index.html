@@ -3,21 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Druga połowa | Dieta dla mężczyzn w andropauzie — Zwierciadło</title>
-<meta name="description" content="Jak facet 45+ odzyskuje poranki, skupienie i formę — bez suplementów, bez tabletek hormonalnych.">
+<title>Druga połowa | Dieta w andropauzie — Sylwia Leszczyńska, Zwierciadło</title>
+<meta name="description" content="Mgła w głowie. Sen, który nic nie regeneruje. Waga, która rośnie sama. To nie wiek — to biologia, którą da się ogarnąć.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink: #0f1419;
-  --ink-soft: #2a2f36;
-  --paper: #f5f2ec;
-  --paper-warm: #ede7db;
-  --accent: #c9401b;
-  --accent-dark: #a02f13;
-  --muted: #8b8578;
-  --line: #d6d0c2;
+  --ink: #0a1f23;
+  --ink-soft: #1a2f33;
+  --paper: #f4f0e8;
+  --paper-warm: #ebe5d6;
+  --book-green: #1f5b54;
+  --book-green-dark: #154641;
+  --accent: #c44a2c;
+  --accent-dark: #a13a1f;
+  --accent-soft: #d4694b;
+  --muted: #7a7468;
+  --line: #d5cfbd;
+  --logo-green: #b8c93f;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -35,10 +39,10 @@ body {
 /* NAV */
 .nav {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(245, 242, 236, 0.95);
+  background: rgba(244, 240, 232, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
-  padding: 16px 0;
+  padding: 14px 0;
 }
 .nav-inner {
   display: flex; justify-content: space-between; align-items: center;
@@ -49,15 +53,24 @@ body {
   font-weight: 900;
   font-size: 22px;
   letter-spacing: -0.5px;
+  color: var(--ink);
 }
-.logo span { color: var(--accent); }
-.nav-right { font-size: 14px; color: var(--muted); }
+.logo-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+}
+.nav-right { font-size: 14px; }
 .nav-right a { color: var(--ink); text-decoration: none; font-weight: 600; margin-left: 24px; }
 .nav-right a:hover { color: var(--accent); }
+.nav-right .cta-nav { color: var(--accent); }
 
 /* HERO */
 .hero {
-  padding: 80px 0 100px;
+  padding: 70px 0 90px;
   background: var(--paper);
   position: relative;
   overflow: hidden;
@@ -79,11 +92,11 @@ body {
 }
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 58px;
-  line-height: 1.05;
+  font-size: 50px;
+  line-height: 1.1;
   font-weight: 900;
-  letter-spacing: -1.5px;
-  margin-bottom: 24px;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
   color: var(--ink);
 }
 .hero h1 em {
@@ -92,16 +105,17 @@ body {
   font-weight: 400;
 }
 .hero-sub {
-  font-size: 20px;
+  font-size: 19px;
   color: var(--ink-soft);
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   max-width: 520px;
+  line-height: 1.5;
 }
-.hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
 .btn {
   display: inline-block;
-  padding: 16px 28px;
-  font-size: 16px;
+  padding: 15px 26px;
+  font-size: 15px;
   font-weight: 600;
   text-decoration: none;
   border-radius: 4px;
@@ -109,6 +123,7 @@ body {
   cursor: pointer;
   transition: all 0.2s;
   font-family: inherit;
+  letter-spacing: 0.2px;
 }
 .btn-primary {
   background: var(--ink);
@@ -121,13 +136,14 @@ body {
 }
 .btn-secondary:hover { background: var(--ink); color: var(--paper); }
 .hero-urgency {
-  margin-top: 32px;
-  padding: 16px 20px;
+  margin-top: 28px;
+  padding: 14px 18px;
   background: var(--paper-warm);
   border-left: 3px solid var(--accent);
   font-size: 14px;
   color: var(--ink-soft);
   max-width: 520px;
+  line-height: 1.5;
 }
 .hero-urgency strong { color: var(--ink); }
 
@@ -139,59 +155,17 @@ body {
 }
 .book-wrapper {
   position: relative;
-  width: 300px;
-  transform: rotate(-3deg);
+  width: 320px;
+  transform: rotate(-2deg);
   transition: transform 0.4s;
+  filter: drop-shadow(-12px 14px 36px rgba(10, 31, 35, 0.3));
 }
 .book-wrapper:hover { transform: rotate(0deg) scale(1.02); }
-.book-cover {
+.book-wrapper img {
   width: 100%;
-  aspect-ratio: 2/3;
-  background: linear-gradient(135deg, #1a1f2a 0%, #0f1419 100%);
+  height: auto;
+  display: block;
   border-radius: 2px;
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.1),
-    -8px 10px 30px rgba(0,0,0,0.25),
-    -15px 20px 60px rgba(0,0,0,0.15);
-  padding: 40px 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-.book-cover::before {
-  content: '';
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 4px;
-  background: rgba(255,255,255,0.1);
-}
-.book-accent {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: var(--accent);
-  text-transform: uppercase;
-}
-.book-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  line-height: 1.1;
-  font-weight: 900;
-  margin: 20px 0;
-}
-.book-sub {
-  font-size: 13px;
-  opacity: 0.75;
-  line-height: 1.5;
-}
-.book-author {
-  font-size: 12px;
-  opacity: 0.6;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 /* SECTION BASE */
@@ -203,51 +177,90 @@ section { padding: 80px 0; }
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .section-title {
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  line-height: 1.1;
+  font-size: 38px;
+  line-height: 1.15;
   font-weight: 900;
-  letter-spacing: -1px;
-  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  margin-bottom: 18px;
   color: var(--ink);
 }
 .section-lead {
-  font-size: 19px;
+  font-size: 18px;
   color: var(--ink-soft);
   max-width: 680px;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
+  line-height: 1.5;
+}
+
+/* CONCEPT (druga polowa explainer) */
+.concept {
+  background: var(--paper-warm);
+  padding: 64px 0;
+}
+.concept-box {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.concept-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+.concept-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1.4;
+  color: var(--ink);
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+.concept-text em {
+  font-style: italic;
+  color: var(--accent);
+}
+.concept-sub {
+  font-size: 16px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto;
 }
 
 /* SIGNS SECTION */
-.signs { background: var(--paper-warm); }
+.signs { background: var(--paper); }
 .signs-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 40px;
+  gap: 18px;
+  margin-top: 36px;
 }
 .sign {
-  background: var(--paper);
-  padding: 28px;
-  border: 1px solid var(--line);
+  background: var(--paper-warm);
+  padding: 24px 26px;
   border-radius: 4px;
+  border-left: 3px solid var(--accent);
   display: flex;
-  gap: 16px;
+  gap: 14px;
   align-items: flex-start;
 }
 .sign-num {
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 900;
   color: var(--accent);
   line-height: 1;
-  min-width: 40px;
+  min-width: 36px;
 }
 .sign-text {
-  font-size: 16px;
+  font-size: 15.5px;
   color: var(--ink-soft);
   line-height: 1.5;
 }
@@ -258,25 +271,25 @@ section { padding: 80px 0; }
   color: var(--paper);
 }
 .audit .section-title { color: var(--paper); }
-.audit .section-tag { color: var(--accent); }
+.audit .section-tag { color: var(--accent-soft); }
 .audit .section-lead { color: #b8b3a5; }
 
 .audit-box {
-  background: #1a1f2a;
+  background: #122529;
   border-radius: 8px;
-  padding: 48px;
-  margin-top: 40px;
-  border: 1px solid #2a2f3a;
+  padding: 44px;
+  margin-top: 36px;
+  border: 1px solid #1f3438;
 }
 .audit-progress {
   display: flex;
   gap: 4px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .audit-progress-bar {
   flex: 1;
   height: 3px;
-  background: #2a2f3a;
+  background: #2a3d40;
   border-radius: 2px;
   transition: background 0.3s;
 }
@@ -287,15 +300,15 @@ section { padding: 80px 0; }
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 16px;
+  color: var(--accent-soft);
+  margin-bottom: 14px;
   font-weight: 700;
 }
 .audit-question {
   font-family: 'Playfair Display', serif;
-  font-size: 26px;
+  font-size: 25px;
   line-height: 1.3;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-weight: 400;
 }
 .audit-options {
@@ -304,10 +317,10 @@ section { padding: 80px 0; }
   gap: 12px;
 }
 .audit-option {
-  padding: 18px;
+  padding: 17px;
   background: transparent;
   color: var(--paper);
-  border: 2px solid #3a3f4a;
+  border: 2px solid #3a4d50;
   border-radius: 4px;
   cursor: pointer;
   font-size: 15px;
@@ -317,20 +330,20 @@ section { padding: 80px 0; }
 }
 .audit-option:hover {
   border-color: var(--accent);
-  color: var(--accent);
+  color: var(--accent-soft);
 }
 .audit-footer {
-  margin-top: 32px;
+  margin-top: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
-  color: #6a7180;
+  color: #6a7d80;
 }
 .audit-footer button {
   background: transparent;
   border: none;
-  color: #6a7180;
+  color: #6a7d80;
   font-family: inherit;
   font-size: 13px;
   cursor: pointer;
@@ -342,32 +355,32 @@ section { padding: 80px 0; }
 .audit-result.show { display: block; }
 .result-score {
   font-family: 'Playfair Display', serif;
-  font-size: 90px;
+  font-size: 86px;
   font-weight: 900;
   line-height: 1;
-  margin: 20px 0;
-  color: var(--accent);
+  margin: 18px 0;
+  color: var(--accent-soft);
 }
-.result-score-total { color: #6a7180; font-size: 60px; }
+.result-score-total { color: #6a7d80; font-size: 56px; }
 .result-profile {
   font-family: 'Playfair Display', serif;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
-  margin: 20px 0 16px;
+  margin: 18px 0 14px;
 }
 .result-description {
-  font-size: 17px;
+  font-size: 16px;
   color: #b8b3a5;
   max-width: 500px;
-  margin: 0 auto 32px;
+  margin: 0 auto 28px;
   line-height: 1.6;
 }
 .result-step {
-  background: #0f1419;
-  padding: 24px;
+  background: #0a1f23;
+  padding: 22px;
   border-radius: 4px;
-  border: 1px solid #2a2f3a;
-  margin: 24px auto;
+  border: 1px solid #1f3438;
+  margin: 20px auto;
   max-width: 520px;
   text-align: left;
 }
@@ -375,22 +388,22 @@ section { padding: 80px 0; }
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-soft);
   margin-bottom: 8px;
   font-weight: 700;
 }
 .result-step-text {
-  font-size: 16px;
+  font-size: 15.5px;
   color: var(--paper);
   line-height: 1.5;
 }
 .result-cta {
-  margin-top: 32px;
-  padding: 28px;
+  margin-top: 28px;
+  padding: 26px;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   border-radius: 6px;
   max-width: 520px;
-  margin: 32px auto 0;
+  margin: 28px auto 0;
 }
 .result-cta-title {
   font-family: 'Playfair Display', serif;
@@ -400,8 +413,9 @@ section { padding: 80px 0; }
 }
 .result-cta-text {
   font-size: 14px;
-  opacity: 0.9;
-  margin-bottom: 20px;
+  opacity: 0.95;
+  margin-bottom: 18px;
+  line-height: 1.5;
 }
 .result-cta .btn {
   background: var(--paper);
@@ -414,54 +428,117 @@ section { padding: 80px 0; }
   border-color: var(--paper);
 }
 
-/* AUTHOR */
+/* WHAT'S INSIDE - sekcja "co dostajesz" w kolorze ksiazki */
+.inside {
+  background: var(--book-green);
+  color: var(--paper);
+}
+.inside .section-title { color: var(--paper); }
+.inside .section-tag { color: #c8d8a8; }
+.inside .section-lead { color: rgba(255,255,255,0.8); }
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+.inside-item {
+  padding: 28px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 6px;
+  border-top: 3px solid var(--accent);
+}
+.inside-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--accent-soft);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.inside-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.inside-text {
+  font-size: 14.5px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.55;
+}
+
+/* AUTHOR - bardziej skromnie, ekspertka merytoryczna */
 .author {
   background: var(--paper);
 }
 .author-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 60px;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
   align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.author-photo-wrap {
+  width: 100%;
+  max-width: 240px;
 }
 .author-photo {
   width: 100%;
-  aspect-ratio: 4/5;
-  background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600');
+  aspect-ratio: 1/1;
+  background-image: url('https://sklep.zwierciadlo.pl/wp-content/uploads/2018/03/leszczynska-sylwia-_B6A0468.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   border-radius: 4px;
-  filter: grayscale(20%) contrast(1.05);
+  filter: grayscale(15%) contrast(1.05);
 }
-.author-quote {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  line-height: 1.4;
-  color: var(--ink);
-  margin-bottom: 24px;
-  font-weight: 400;
-  font-style: italic;
-}
-.author-quote::before {
-  content: '"';
-  display: block;
-  font-size: 80px;
-  line-height: 0.5;
-  color: var(--accent);
-  margin-bottom: 20px;
-}
-.author-name {
-  font-size: 14px;
+.author-tag {
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--accent);
+  margin-bottom: 12px;
 }
 .author-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: var(--ink);
+}
+.author-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.author-role {
   font-size: 14px;
   color: var(--muted);
-  margin-top: 4px;
+  margin-bottom: 18px;
 }
+.author-bio {
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.author-credentials {
+  display: flex;
+  gap: 24px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.author-cred {
+  font-size: 13px;
+  color: var(--muted);
+  border-left: 2px solid var(--accent);
+  padding-left: 10px;
+  line-height: 1.4;
+}
+.author-cred strong { color: var(--ink); display: block; font-size: 14px; }
 
 /* TESTIMONIALS */
 .voices {
@@ -470,26 +547,26 @@ section { padding: 80px 0; }
 .voices-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 40px;
+  gap: 22px;
+  margin-top: 36px;
 }
 .voice {
   background: var(--paper);
-  padding: 32px;
+  padding: 28px;
   border-radius: 4px;
   border: 1px solid var(--line);
 }
 .voice-text {
-  font-size: 16px;
+  font-size: 15.5px;
   color: var(--ink-soft);
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-style: italic;
 }
 .voice-meta {
   font-size: 13px;
   color: var(--muted);
-  padding-top: 16px;
+  padding-top: 14px;
   border-top: 1px solid var(--line);
 }
 .voice-meta strong { color: var(--ink); font-weight: 700; }
@@ -508,53 +585,54 @@ section { padding: 80px 0; }
 }
 .final-box {
   max-width: 640px;
-  margin: 40px auto 0;
-  padding: 48px;
-  background: #1a1f2a;
+  margin: 36px auto 0;
+  padding: 44px;
+  background: #122529;
   border-radius: 8px;
-  border: 1px solid #2a2f3a;
+  border: 1px solid #1f3438;
 }
 .price-row {
   display: flex;
   justify-content: center;
   align-items: baseline;
   gap: 16px;
-  margin: 24px 0;
+  margin: 20px 0;
 }
 .price {
   font-family: 'Playfair Display', serif;
-  font-size: 56px;
+  font-size: 52px;
   font-weight: 900;
   color: var(--paper);
 }
 .price-note { font-size: 14px; color: #b8b3a5; }
 .bonus-list {
   text-align: left;
-  max-width: 400px;
-  margin: 24px auto;
+  max-width: 420px;
+  margin: 22px auto;
   list-style: none;
 }
 .bonus-list li {
-  padding: 10px 0;
-  padding-left: 24px;
+  padding: 11px 0;
+  padding-left: 26px;
   position: relative;
   font-size: 15px;
-  color: #b8b3a5;
-  border-bottom: 1px dashed #2a2f3a;
+  color: #d8d4c5;
+  border-bottom: 1px dashed #1f3438;
+  line-height: 1.5;
 }
 .bonus-list li::before {
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--accent);
+  color: var(--accent-soft);
   font-weight: 700;
 }
 .final-cta .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
-  margin-top: 20px;
-  padding: 20px 48px;
-  font-size: 18px;
+  margin-top: 18px;
+  padding: 18px 44px;
+  font-size: 17px;
 }
 .final-cta .btn-primary:hover {
   background: var(--accent-dark);
@@ -564,12 +642,12 @@ section { padding: 80px 0; }
 /* FAQ */
 .faq-item {
   border-bottom: 1px solid var(--line);
-  padding: 24px 0;
+  padding: 22px 0;
   cursor: pointer;
 }
 .faq-q {
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 700;
   color: var(--ink);
   display: flex;
@@ -578,7 +656,7 @@ section { padding: 80px 0; }
 }
 .faq-q::after {
   content: '+';
-  font-size: 28px;
+  font-size: 26px;
   color: var(--accent);
   font-weight: 300;
   transition: transform 0.2s;
@@ -590,43 +668,48 @@ section { padding: 80px 0; }
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s;
-  font-size: 16px;
+  font-size: 15.5px;
   color: var(--ink-soft);
   line-height: 1.6;
 }
 .faq-item.open .faq-a {
   max-height: 400px;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 /* FOOTER */
 .footer {
   background: var(--ink);
-  color: #6a7180;
-  padding: 40px 0;
+  color: #6a7d80;
+  padding: 36px 0;
   font-size: 14px;
   text-align: center;
-  border-top: 1px solid #2a2f3a;
+  border-top: 1px solid #1f3438;
 }
 .footer a { color: #b8b3a5; text-decoration: none; margin: 0 12px; }
 
 /* RESPONSIVE */
 @media (max-width: 860px) {
-  .hero { padding: 40px 0 60px; }
-  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-  .hero h1 { font-size: 38px; }
+  .hero { padding: 36px 0 56px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero h1 { font-size: 34px; }
   .hero-sub { font-size: 17px; }
   .book-wrapper { width: 220px; margin: 0 auto; }
-  section { padding: 60px 0; }
-  .section-title { font-size: 30px; }
+  section { padding: 56px 0; }
+  .section-title { font-size: 28px; }
   .signs-grid { grid-template-columns: 1fr; }
   .voices-grid { grid-template-columns: 1fr; }
-  .author-grid { grid-template-columns: 1fr; gap: 40px; }
-  .audit-box { padding: 28px; }
-  .audit-question { font-size: 20px; }
+  .inside-grid { grid-template-columns: 1fr; }
+  .author-grid { grid-template-columns: 1fr; gap: 28px; text-align: left; }
+  .author-photo-wrap { max-width: 180px; }
+  .audit-box { padding: 26px; }
+  .audit-question { font-size: 19px; }
   .audit-options { grid-template-columns: 1fr; }
-  .final-box { padding: 28px; }
+  .final-box { padding: 26px; }
   .nav-right a { margin-left: 12px; font-size: 13px; }
+  .logo-tag { display: none; }
+  .concept-text { font-size: 21px; }
+  .author-credentials { gap: 14px; }
 }
 </style>
 </head>
@@ -634,11 +717,14 @@ section { padding: 80px 0; }
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="logo">Druga<span>.</span>połowa</div>
+    <div>
+      <span class="logo">Druga połowa</span>
+      <span class="logo-tag">książka „Dieta w andropauzie"</span>
+    </div>
     <div class="nav-right">
       <a href="#audyt">Audyt</a>
       <a href="#ksiazka">Książka</a>
-      <a href="#kup" style="color: var(--accent);">Zamów</a>
+      <a href="#kup" class="cta-nav">Zamów</a>
     </div>
   </div>
 </nav>
@@ -648,42 +734,45 @@ section { padding: 80px 0; }
     <div class="hero-grid">
       <div>
         <span class="hero-eyebrow">Pierwsza w Polsce książka o męskiej andropauzie</span>
-        <h1>Pierwszą połowę grałeś na <em>talencie</em>.<br>Drugą wygrywa się <em>taktyką</em>.</h1>
-        <p class="hero-sub">Jak facet 45+ odzyskuje poranki, skupienie i formę — bez suplementów, bez tabletek hormonalnych. To jest playbook, nie poradnik.</p>
+        <h1>Mgła w głowie po 14:00. Sen, który nic <em>nie regeneruje</em>. Waga, która <em>rośnie sama</em>.</h1>
+        <p class="hero-sub">To nie wiek. To biologia, którą da się ogarnąć — bez tabletek hormonalnych, bez suplementów cud, bez panicznych zmian.</p>
         <div class="hero-cta">
-          <a href="#kup" class="btn btn-primary">Zamów książkę — 49 zł</a>
+          <a href="#kup" class="btn btn-primary">Zamów książkę</a>
           <a href="#audyt" class="btn btn-secondary">Zrób audyt (3 min)</a>
         </div>
         <div class="hero-urgency">
-          <strong>Kupując w ciągu 14 dni od premiery:</strong> dostęp do webinarium „Klinika Protokołu" z autorem i lekarzem. 90 minut. Pytania bez cenzury. Tylko dla zamawiających.
+          <strong>Kupując w pierwsze 14 dni od premiery:</strong> dostęp do webinarium „Klinika Protokołu" z autorką i lekarzem. 90 minut, pytania bez cenzury, tylko dla zamawiających.
         </div>
       </div>
       <div class="hero-book">
         <div class="book-wrapper">
-          <div class="book-cover">
-            <div>
-              <div class="book-accent">Protokół drugiej połowy</div>
-              <h2 class="book-title">Dieta dla mężczyzn w andropauzie</h2>
-              <p class="book-sub">Co się zmienia po 45. roku życia — i co z tym zrobić, zanim zacznie Ci zabierać za wiele.</p>
-            </div>
-            <div class="book-author">Zwierciadło · 2026</div>
-          </div>
+          <img src="https://bigimg.taniaksiazka.pl/images/popups/C04/9788381327640,1.jpg" alt="Dieta w andropauzie — Sylwia Leszczyńska, wydawnictwo Zwierciadło" />
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="concept">
+  <div class="container">
+    <div class="concept-box">
+      <div class="concept-tag">Dlaczego „Druga połowa"</div>
+      <p class="concept-text">Pierwszą połowę życia ciało <em>wybacza wszystko</em>. Druga połowa nie wybacza nic — i wymaga decyzji, których wcześniej nie musiałeś podejmować.</p>
+      <p class="concept-sub">Po 45. roku życia spadek hormonów, zmieniony metabolizm i kumulacja stresu zaczynają zmieniać sposób, w jaki organizm reaguje na to, co jadłeś od 25 lat. Ta książka to konkretny plan na ten etap — żeby nie zaczynać dopiero wtedy, kiedy „muszę", tylko zacząć, kiedy jeszcze możesz wybrać.</p>
+    </div>
+  </div>
+</section>
+
 <section class="signs">
   <div class="container">
-    <span class="section-tag">6 sygnałów, że jesteś w drugiej połowie</span>
+    <span class="section-tag">6 sygnałów, że to o Tobie</span>
     <h2 class="section-title">Rozpoznaj to bez wizyty u lekarza</h2>
     <p class="section-lead">Jeśli 3 z 6 poniższych brzmią znajomo — to nie zmęczenie. To biologia, której nikt Ci nie wytłumaczył.</p>
     <div class="signs-grid">
       <div class="sign"><div class="sign-num">01</div><div class="sign-text">Budzisz się między 3 a 5 rano co najmniej 2 razy w tygodniu — bez alkoholu, bez kawy po 14:00.</div></div>
       <div class="sign"><div class="sign-num">02</div><div class="sign-text">Pracujesz tak samo jak 5 lat temu, ale po 14:00 masz mgłę, której rano nie było.</div></div>
       <div class="sign"><div class="sign-num">03</div><div class="sign-text">Trenujesz tak samo, regeneracja trwa dwa razy dłużej.</div></div>
-      <div class="sign"><div class="sign-num">04</div><div class="sign-text">Waga rośnie mimo, że jesz tak samo jak 10 lat temu — głównie w pasie.</div></div>
+      <div class="sign"><div class="sign-num">04</div><div class="sign-text">Waga rośnie głównie w pasie, mimo że jesz tak samo jak 10 lat temu.</div></div>
       <div class="sign"><div class="sign-num">05</div><div class="sign-text">Partnerka mówi, że się zmieniłeś. Ty myślisz, że jesteś tylko zmęczony.</div></div>
       <div class="sign"><div class="sign-num">06</div><div class="sign-text">Decyzję, którą rok temu podjąłbyś w 10 minut, dziś odkładasz o tydzień.</div></div>
     </div>
@@ -724,9 +813,34 @@ section { padding: 80px 0; }
         </div>
         <div class="result-cta">
           <div class="result-cta-title">Chcesz pełny protokół?</div>
-          <div class="result-cta-text">Książka to 220 stron konkretnego planu — dieta, sen, regeneracja, decyzje w pracy. Zamówisz w 30 sekund.</div>
-          <a href="#kup" class="btn btn-primary">Zamów książkę — 49 zł</a>
+          <div class="result-cta-text">Książka to konkretny plan na każdy obszar — dieta, sen, regeneracja, decyzje w pracy. Zamówisz w 30 sekund.</div>
+          <a href="#kup" class="btn btn-primary">Zamów książkę</a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="inside" id="ksiazka">
+  <div class="container">
+    <span class="section-tag">Co znajdziesz w środku</span>
+    <h2 class="section-title">Trzy obszary. Jeden spójny plan.</h2>
+    <p class="section-lead">To nie jest poradnik na zasadzie „jedz więcej warzyw". To podzielony na konkretne kroki plan dla mężczyzny, który chce ten etap przejść świadomie.</p>
+    <div class="inside-grid">
+      <div class="inside-item">
+        <div class="inside-num">01</div>
+        <div class="inside-title">Dieta dopasowana do biologii 45+</div>
+        <div class="inside-text">Konkretne przepisy, gotowe jadłospisy, autorskie zestawy posiłków zbilansowane pod metabolizm po 45. roku życia.</div>
+      </div>
+      <div class="inside-item">
+        <div class="inside-num">02</div>
+        <div class="inside-title">Sen i regeneracja</div>
+        <div class="inside-text">Co zmienia się hormonalnie po 45., dlaczego budzisz się o 4 rano, i co konkretnie zrobić wieczorem, żeby przespać noc.</div>
+      </div>
+      <div class="inside-item">
+        <div class="inside-num">03</div>
+        <div class="inside-title">Energia i głowa</div>
+        <div class="inside-text">Mgła mózgowa, spadek koncentracji, „crashe" o 14:00 — co je powoduje i jak je wyłączać bez kolejnej kawy.</div>
       </div>
     </div>
   </div>
@@ -735,13 +849,20 @@ section { padding: 80px 0; }
 <section class="author">
   <div class="container">
     <div class="author-grid">
-      <div class="author-photo"></div>
+      <div class="author-photo-wrap">
+        <div class="author-photo"></div>
+      </div>
       <div>
-        <span class="section-tag">Kto to napisał</span>
-        <p class="author-quote">To nie jest książka o starzeniu się. To jest książka dla facetów, którzy zauważyli, że coś się zmieniło — i nie chcą czekać, aż zacznie im to zabierać za dużo. Taktyka, nie diagnoza.</p>
-        <div class="author-name">Dr Tomasz K.</div>
-        <div class="author-title">Dietetyk kliniczny, 20 lat praktyki z pacjentami 40+</div>
-        <p style="margin-top: 24px; color: var(--ink-soft);">Współpracował z klubami sportowymi ekstraklasy, kadrą managerską spółek giełdowych, i kilkuset facetami, którzy chcieli zrozumieć, dlaczego protokoły z lat 30. przestały im działać.</p>
+        <div class="author-tag">Ekspertyza za książką</div>
+        <h2 class="author-title">Stoi za tym konkretna wiedza, nie kolejny trend.</h2>
+        <div class="author-name">Sylwia Leszczyńska</div>
+        <div class="author-role">Dietetyk kliniczny, specjalistka żywienia w chorobach przewlekłych</div>
+        <p class="author-bio">Autorka książki specjalizuje się w pracy z pacjentami zmagającymi się z zaburzeniami metabolicznymi i hormonalnymi. Książka łączy wiedzę kliniczną z konkretnymi, sprawdzonymi w praktyce rozwiązaniami — bez szumu, bez modnych haseł, bez obietnic cudu.</p>
+        <div class="author-credentials">
+          <div class="author-cred"><strong>Wykształcenie</strong>Dietetyka kliniczna, specjalizacja w żywieniu osób dorosłych</div>
+          <div class="author-cred"><strong>Praktyka</strong>Wieloletnie doświadczenie w pracy z pacjentami w Instytucie Zdrowego Żywienia i Dietetyki Klinicznej</div>
+          <div class="author-cred"><strong>Publikacje</strong>Autorka kilku książek o dietetyce, regularnie cytowana w mediach branżowych</div>
+        </div>
       </div>
     </div>
   </div>
@@ -757,7 +878,7 @@ section { padding: 80px 0; }
         <div class="voice-meta"><strong>Marek, 51</strong><br>dyrektor operacyjny, Warszawa</div>
       </div>
       <div class="voice">
-        <p class="voice-text">„Kupiłem dla męża, ale przeczytałam pierwsza. Wreszcie zrozumiałam, że to nie kryzys naszego związku."</p>
+        <p class="voice-text">„Kupiłam dla męża, ale przeczytałam pierwsza. Wreszcie zrozumiałam, że to nie kryzys naszego związku."</p>
         <div class="voice-meta"><strong>Anna, 46</strong><br>kupiła dla partnera</div>
       </div>
       <div class="voice">
@@ -772,7 +893,7 @@ section { padding: 80px 0; }
   <div class="narrow">
     <span class="section-tag">Zamów książkę</span>
     <h2 class="section-title">Koniec z „to tylko wiek".</h2>
-    <p class="section-lead">Druga połowa to nie emerytura. To gra, którą wygrywa się inaczej niż pierwszą.</p>
+    <p class="section-lead">Druga połowa nie jest emeryturą. To etap, który wygrywa się inaczej niż pierwszy — i właśnie o tym jest ta książka.</p>
 
     <div class="final-box">
       <div class="price-row">
@@ -781,14 +902,14 @@ section { padding: 80px 0; }
       </div>
 
       <ul class="bonus-list">
-        <li>220 stron konkretnego planu — dieta, sen, regeneracja, decyzje w pracy</li>
-        <li>Webinarium „Klinika Protokołu" z autorem i lekarzem (90 min, tylko dla kupujących)</li>
+        <li>Konkretny plan posiłków — autorskie przepisy zbilansowane pod metabolizm 45+</li>
+        <li>Webinarium „Klinika Protokołu" z autorką i lekarzem (90 min, tylko dla kupujących)</li>
         <li>Dostęp do zamkniętej grupy „Klub czytelników drugiej połowy"</li>
         <li>Kod QR w książce — rozszerzony Audyt online, tylko dla posiadaczy</li>
       </ul>
 
       <a href="#" class="btn btn-primary">Zamów teraz</a>
-      <p style="margin-top: 16px; font-size: 13px; color: #6a7180;">Wysyłka w 48h. Dostępne także w Empiku i na Allegro.</p>
+      <p style="margin-top: 14px; font-size: 13px; color: #6a7d80;">Wysyłka w 48h. Dostępne także w Empiku, na Allegro i w sklepie Zwierciadło.</p>
     </div>
   </div>
 </section>
@@ -805,22 +926,22 @@ section { padding: 80px 0; }
 
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">Czy to jest książka medyczna?</div>
-      <div class="faq-a">Nie. To jest poradnik praktyczny oparty na wiedzy medycznej i konsultowany z lekarzami (endokrynolog, internista). Nie zastępuje diagnozy ani wizyty u specjalisty — ale daje Ci język i narzędzia, zanim na taką wizytę się zdecydujesz.</div>
+      <div class="faq-a">Nie. To jest poradnik praktyczny napisany przez dietetyka klinicznego. Nie zastępuje diagnozy ani wizyty u specjalisty — ale daje Ci język i narzędzia, zanim na taką wizytę się zdecydujesz.</div>
     </div>
 
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">Mam 42 lata — to za wcześnie?</div>
-      <div class="faq-a">Nie. Druga połowa zaczyna się wcześniej niż większość myśli — pierwsze zmiany są zauważalne już w okolicach 40. roku życia. Im wcześniej zrozumiesz, co się zmienia, tym łatwiej utrzymać formę.</div>
+      <div class="faq-a">Nie. Zmiany hormonalne i metaboliczne zaczynają się wcześniej niż większość myśli — pierwsze sygnały są zauważalne już w okolicach 40. roku życia. Im wcześniej zrozumiesz, co się zmienia, tym łatwiej utrzymać formę.</div>
     </div>
 
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">Kupuję dla partnera — czy to ma sens?</div>
-      <div class="faq-a">Tak — ale ta książka jest tak napisana, że warto ją najpierw przeczytać samej. Da Ci język do tego, co widzisz codziennie w domu. Nie musisz mu jej wciskać. Wystarczy, że ją zostawisz na stoliku.</div>
+      <div class="faq-a">Tak — i ta książka jest tak napisana, że warto ją najpierw przeczytać samej. Da Ci język do tego, co widzisz codziennie w domu. Nie musisz mu jej wciskać. Wystarczy, że ją zostawisz na stoliku.</div>
     </div>
 
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">Co dostaję poza książką?</div>
-      <div class="faq-a">Webinarium „Klinika Protokołu" (90 min z autorem i lekarzem, dla kupujących w pierwsze 14 dni), dostęp do zamkniętej grupy FB „Klub czytelników drugiej połowy", oraz kod QR w książce do rozszerzonego Audytu online.</div>
+      <div class="faq-a">Webinarium „Klinika Protokołu" (90 min z autorką i lekarzem, dla kupujących w pierwsze 14 dni), dostęp do zamkniętej grupy FB „Klub czytelników drugiej połowy", oraz kod QR w książce do rozszerzonego Audytu online.</div>
     </div>
   </div>
 </section>
@@ -926,5 +1047,3 @@ renderQuestion();
 
 </body>
 </html>
-
-
