@@ -270,6 +270,61 @@ section { padding: 80px 0; }
   background: var(--ink);
   color: var(--paper);
 }
+
+/* FOR HER - sekcja dla kobiet kupujących dla partnera */
+.for-her {
+  background: var(--book-green);
+  color: var(--paper);
+  padding: 64px 0;
+}
+.for-her-box {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.for-her .section-tag {
+  color: #d4e4b8;
+}
+.for-her-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  color: var(--paper);
+}
+.for-her-title em {
+  font-style: italic;
+  color: var(--accent-soft);
+  font-weight: 400;
+}
+.for-her-text {
+  font-size: 17px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-secondary-light {
+  background: transparent;
+  color: var(--paper);
+  border: 2px solid var(--paper);
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.btn-secondary-light:hover {
+  background: var(--paper);
+  color: var(--book-green);
+}
 .audit .section-title { color: var(--paper); }
 .audit .section-tag { color: var(--accent-soft); }
 .audit .section-lead { color: #b8b3a5; }
@@ -710,6 +765,8 @@ section { padding: 80px 0; }
   .logo-tag { display: none; }
   .concept-text { font-size: 21px; }
   .author-credentials { gap: 14px; }
+  .for-her-title { font-size: 26px; }
+  .for-her-text { font-size: 16px; }
 }
 </style>
 </head>
@@ -775,6 +832,17 @@ section { padding: 80px 0; }
       <div class="sign"><div class="sign-num">04</div><div class="sign-text">Waga rośnie głównie w pasie, mimo że jesz tak samo jak 10 lat temu.</div></div>
       <div class="sign"><div class="sign-num">05</div><div class="sign-text">Partnerka mówi, że się zmieniłeś. Ty myślisz, że jesteś tylko zmęczony.</div></div>
       <div class="sign"><div class="sign-num">06</div><div class="sign-text">Decyzję, którą rok temu podjąłbyś w 10 minut, dziś odkładasz o tydzień.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="for-her">
+  <div class="container">
+    <div class="for-her-box">
+      <span class="section-tag">Czytasz to dla niego?</span>
+      <h2 class="for-her-title">Nie musisz mu tego dawać. Wystarczy, że <em>Ty wiesz</em>.</h2>
+      <p class="for-her-text">Jeśli widzisz u partnera te zmiany od miesięcy, ale on uparcie powtarza, że jest „tylko zmęczony" — ta książka jest też dla Ciebie. Da Ci język do nazwania tego, co się dzieje, i konkretny plan, który możesz mu zostawić na stoliku albo nie. Decyzja należy do Ciebie.</p>
+      <a href="#kup" class="btn btn-secondary-light">Zamów książkę</a>
     </div>
   </div>
 </section>
